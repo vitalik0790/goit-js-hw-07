@@ -26,7 +26,7 @@ const gallery = document.querySelector('#gallery');
 
 gallery.insertAdjacentHTML('afterbegin',
     images.reduce((acc, { url, alt }) => {
-        acc += `<li class="gallery__item"><img src="${url}" alt="${alt}" width = "400px"></li>`;
+        acc += `<li class = "gallery__item"><img src="${url}" alt="${alt}" width = "400px"></li>`;
         return acc;
     }, ''),
 );
